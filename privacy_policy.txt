@@ -1,0 +1,31 @@
+Privacy Policy
+
+Effective Date: 09/19/2025
+
+1. Information We Collect
+
+When you use G2N (working name), you may grant us access to data from third-party services such as Google Workspace and Notion. This may include files, calendar events, and workspace content you explicitly select.
+
+2. How We Use Information
+
+We use the data only to provide the core functionality of the Service: importing, exporting, and syncing your selected content between Google and Notion.
+
+3. Data Sharing
+
+We do not sell, rent, or trade your data. We do not share your information with third parties except as required by law.
+
+4. Data Storage & Retention
+
+We store access tokens securely to maintain your session. We do not permanently store the contents of your Google or Notion data beyond what is necessary to perform the requested operation.
+
+5. Security
+
+We use industry-standard methods to protect your information, but no system is 100% secure. You use the Service at your own risk.
+
+6. Your Choices
+
+You may revoke our access to your Google or Notion account at any time via your account settings in those services. You may also request deletion of any stored data by contacting us.
+
+7. Contact
+
+If you have questions about this policy, I'm afraid you're plumb out of luck. Feel free to attempt to contact me on LinkedIn @ https://www.linkedin.com/in/theo-maurino.

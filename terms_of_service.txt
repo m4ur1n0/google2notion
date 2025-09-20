@@ -1,0 +1,45 @@
+Terms of Servic
+
+Effective Date: 09/19/2025
+
+1. Acceptance of Terms
+
+By accessing or using G2N (working name), you agree to be bound by these Terms of Service. If you do not agree, you may not use the Service.
+
+2. Description of Service
+
+G2N (working name) provides tools that connect to third-party services such as Notion and Google Workspace, allowing you to import, export, and manage your own content.
+
+3. User Responsibilities
+
+You are responsible for your account activity and for maintaining the confidentiality of your login credentials.
+
+You agree not to misuse the Service (e.g., attempting to gain unauthorized access, distributing malware, or violating applicable laws).
+
+4. Third-Party Services
+
+The Service relies on third-party APIs (e.g., Notion, Google). Your use of those services is subject to their own terms and policies. We are not responsible for their availability or performance.
+
+5. Data and Privacy
+
+We only access your data with your explicit authorization. We do not sell your data. Please review our Privacy Policy for more information.
+
+6. Disclaimers
+
+The Service is provided “as is,” without warranties of any kind. We do not guarantee that the Service will be error-free, secure, or always available.
+
+7. Limitation of Liability
+
+To the maximum extent permitted by law, G2N (working name) and its team will not be liable for any damages resulting from your use of the Service.
+
+8. Changes to Terms
+
+We may update these Terms from time to time. If changes are material, we will notify you by email or through the Service.
+
+9. Governing Law
+
+These Terms are governed by the laws of the United States of America.
+
+10. Contact
+
+If you have questions about these Terms, I'm afraid you're plumb out of luck. Feel free to attempt to contact me on LinkedIn @ https://www.linkedin.com/in/theo-maurino.
