@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <main className="flex flex-row justify-center items-center w-full h-full">
             <Button variant="outline" asChild>
-                <a className="" href={notion_auth} target="_blank">
+                <a className="" href={notion_auth}>
                     N  Notion
                 </a>
             </Button>

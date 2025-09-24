@@ -30,13 +30,26 @@ export async function POST(req : NextRequest) {
 
         if (notion_auth[0] === 500) { // guard failure
             return handleErr(notion_auth[1])
-        }
+        } // else we succeeded
 
+        // dissect the response
+        const notion_data = notion_auth[1];
+        // gonna be hardcoding token_type as 'bearer' anyway
+        const {access_token, refresh_token, workspace_name, workspace_icon, workspace_id, owner } = notion_data;
+
+        // do something devilishly clever with the refresh token
+        
 
         // i'm about 60% sure application/json is accurate here, but i'm 80% sure it doesn't matter
         return new Response(
             JSON.stringify({
-                data : notion_auth[1]
+                access_token,
+                workspace : {
+                    workspace_name,
+                    workspace_icon,
+                    workspace_id
+                },
+                owner
             }),
             {
                 status : 200,
