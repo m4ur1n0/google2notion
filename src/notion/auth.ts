@@ -1,23 +1,15 @@
 import axios from "axios";
 
 
-function handleErr(err : string) {
-    return new Response(
-        JSON.stringify({
-            body : err,
-            status : 500
-        })
-
-    );
-}
 
 export async function get_notion_access_token(code : string) {
 
-    const redirect_uri = "http://localhost:3000"
+    const redirect_uri = "http://localhost:3000/auth/notion/callback"
+    const auth = Buffer.from(`${process.env.NOTION_CLIENT_ID}:${process.env.NOTION_CLIENT_SECRET}`).toString('base64');
 
     try {
 
-        const resp = axios.post(
+        const resp = await axios.post(
             "https://api.notion.com/v1/oauth/token",
             {
                 grant_type : "authorization_code",
@@ -26,7 +18,7 @@ export async function get_notion_access_token(code : string) {
             },
             {
                 headers : {
-                    "Authorization" : `Basic ${process.env.NOTION_CLIENT_SECRET_B64}`,
+                    "Authorization" : `Basic ${auth}`,
                     "Content-Type" : "application/json",
                     "Notion-Version" : "2022-09-03"
                 }
@@ -34,13 +26,16 @@ export async function get_notion_access_token(code : string) {
 
         );
 
-        console.log(resp);
-        console.log(JSON.stringify(resp));
+        console.log(JSON.stringify(resp.data));
 
-        return 200;
+        if (resp.status !== 200) {
+            return [500, `Notion authentication failed with error : [ ${resp.status} : ${resp.statusText} ]`];
+        }
+
+        return [200, resp.data];
 
     } catch (err : any) {
-        return handleErr(err.toString() || "An error occurred.");
+        return [500, err.toString() || "An error occurred."]
     }
 
 }
