@@ -6,7 +6,7 @@ import { get_notion_access_token } from '@/notion/auth'
 
 type Props = {}
 
-const page = async () => {
+const page = () => {
 
     const searchParams = useSearchParams();
     const code = searchParams.get("code");
@@ -25,6 +25,8 @@ const page = async () => {
             if (resp.status===200) {
                 // do something to store the data
                 const data = await resp.json();
+                console.log(JSON.stringify(data));
+
                 //then
                 router.push("/");
             } else {
